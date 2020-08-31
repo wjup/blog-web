@@ -5,37 +5,72 @@
         <img style="width:100%;height:100%" :src="item.path" />
       </el-carousel-item>
     </el-carousel>
-    <br /><br />
+    <br />
+    <br />
     <div style="text-align:center;">
-      <span class="tag">JAVA</span>&nbsp;
-      <span class="create-time">2020-08-31</span>
-      <br><br>
-      <span class="title">ANT DESIGN和COMPOSITIONEVENT</span>
-      <br><br>
-      <span class="synopsis">
-        中文输入法（包括CJK输入法）都有的问题：如果上监听input事件，在Win/Mac上每次 …
-      </span>
-      <br><br>
-      <el-button>MORE</el-button>
-      <br><br>
-      <span class="title-divider"></span>
-      <br><br>
+      <div class="content-line">
+        
+        <span class="tag">JAVA</span>&nbsp;
+        <span class="create-time">2020-08-31</span>
+      </div>
+      <div class="content-line">
+        <span class="title">ANT DESIGN和COMPOSITIONEVENT</span>
+      </div>
+      <div>
+        <span class="title-divider"></span>
+      </div>
+      <div class="content-line">
+        <span class="synopsis">中文输入法（包括CJK输入法）都有的问题：如果上监听input事件，在Win/Mac上每次 …</span>
+      </div>
+      <div class="content-line">
+        <el-button>MORE</el-button>
+      </div>
+      <el-divider><i class="el-icon-cold-drink"></i></el-divider>
     </div>
+
     <div style="text-align:center;">
-      <span class="tag">JAVA</span>&nbsp;
-      <span class="create-time">2020-08-31</span>
-      <br><br>
-      <span class="title">ANT DESIGN和COMPOSITIONEVENT</span>
-      <br><br>
-      <span class="synopsis">
-        中文输入法（包括CJK输入法）都有的问题：如果上监听input事件，在Win/Mac上每次 …
-      </span>
-      <br><br>
-      <el-button>MORE</el-button>
-      <br><br>
-      <span class="title-divider"></span>
-      <br><br>
+      <div class="content-line">
+        <span class="tag">PYTHON</span>&nbsp;
+        <span class="tag">PYTHON</span>&nbsp;
+        <span class="create-time">2020-08-31</span>
+      </div>
+      <div class="content-line">
+        <span class="title">ANT DESIGN和COMPOSITIONEVENT</span>
+      </div>
+      <div>
+        <span class="title-divider"></span>
+      </div>
+      <div class="content-line">
+        <span class="synopsis">中文输入法（包括CJK输入法）都有的问题：如果上监听input事件，在Win/Mac上每次 …</span>
+      </div>
+      <div class="content-line">
+        <el-button>MORE</el-button>
+      </div>
+      <el-divider><i class="el-icon-cold-drink"></i></el-divider>
     </div>
+
+    <div style="text-align:center;">
+      <div class="content-line">
+        <span class="tag">PYTHON</span>&nbsp;
+        <span class="tag">PYTHON</span>&nbsp;
+        <span class="create-time">2020-08-31</span>
+      </div>
+      <div class="content-line">
+        <span class="title">ANT DESIGN和COMPOSITIONEVENT</span>
+      </div>
+      <div>
+        <span class="title-divider"></span>
+      </div>
+      <div class="content-line">
+        <span class="synopsis">中文输入法（包括CJK输入法）都有的问题：如果上监听input事件，在Win/Mac上每次 …</span>
+      </div>
+      <div class="content-line">
+        <el-button>MORE</el-button>
+      </div>
+      <el-divider><i class="el-icon-cold-drink"></i></el-divider>
+    </div>
+
+    
   </div>
 </template>
 <script>
@@ -99,24 +134,28 @@ export default {
   font-size: x-small;
 }
 
-.create-time{
+.create-time {
   color: #999;
   font-size: small;
 }
 
-.title{
+.title {
   font-size: x-large;
 }
 
 .title-divider {
-    border-top: 2px solid;
-    display: block;
-    max-width: 55px;
-    margin: 0 auto 12px;
-    color: #000;
+  border-top: 2px solid;
+  display: block;
+  max-width: 55px;
+  margin: 0 auto 12px;
+  color: #000;
 }
 
-.synopsis{
+.synopsis {
   font-size: small;
+}
+
+.content-line {
+  padding: 12px;
 }
 </style>

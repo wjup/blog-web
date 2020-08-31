@@ -13,12 +13,16 @@
     </el-card>
     <br />
     <div class="right-top">RECENT POSTS</div>
-    <el-card class="box-card" style="text-align:left;font-size:smaller;line-height:25px">
-      <li>国内独立开发者实践要点</li>
-      <li>ANT DESIGN和COMPOSITIONEVENT</li>
-      <li>LARAVEL(REST API)+REACT入门范例</li>
-      <li>主流REACT NATIVE组件库比较</li>
-      <li>中国艺术品的SVG</li>
+    <el-card class="box-card" style="text-align:left;font-size:smaller;">
+      <span>国内独立开发者实践要点</span>
+      <el-divider></el-divider>
+      <span>ANT DESIGN和COMPOSITIONEVENT</span>
+      <el-divider></el-divider>
+      <span>LARAVEL(REST API)+REACT入门范例</span>
+      <el-divider></el-divider>
+      <span>主流REACT NATIVE组件库比较</span>
+      <el-divider></el-divider>
+      <span>中国艺术品的SVG</span>
     </el-card>
   </div>
 </template>
@@ -41,5 +45,11 @@ export default {
   padding: 15px;
   font-size: small;
   font-weight: bolder;
+}
+
+.el-divider--horizontal {
+  margin: 8px 0;
+  background: 0 0;
+  border-top: 1px dashed #e8eaec;
 }
 </style>

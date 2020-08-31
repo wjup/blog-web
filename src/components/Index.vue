@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .content {
-  padding: 0 12%;
+  padding: 0 6%;
 }
 
 .f-bottom {
