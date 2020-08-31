@@ -7,9 +7,6 @@
       </el-col>
       <el-col :xs="24" :sm="8" :md="10" :lg="14">
         <el-card class="box-card">
-          <!-- </el-card>
-        <br>
-          <el-card class="box-card">-->
           <br />
           <router-view></router-view>
         </el-card>

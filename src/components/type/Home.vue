@@ -1,13 +1,13 @@
 <template>
   <div>
-      <Top></Top><br>
+      <Content></Content>
   </div>
 </template>
 <script>
-import Top from "@/components/common/Top";
+import Content from "@/components/common/Content";
 export default {
   name: "Home",
-  components:{Top}
+  components:{Content}
 };
 </script>
 

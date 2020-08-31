@@ -6,9 +6,16 @@
     </el-card>
     <el-card class="box-card" style="text-align:left">
       <div v-for="o in memList" :key="o.index" class="text item">
-        <i :class="o.icon"></i>&nbsp;
-        {{o.name }}
+        <i :class="o.icon"></i>
+        &nbsp;
+        <span style="color:#555">{{o.name }}</span>
       </div>
+    </el-card>
+    <br />
+    <el-card class="box-card" style="text-align:center">
+      <img src="http://blog.wjup.top/images/avatar.jpg" class="logo" />
+      <div class="logo-one">wjup</div>
+      <div class="logo-two">乘风破浪，来日可期</div>
     </el-card>
   </div>
 </template>
@@ -71,5 +78,22 @@ export default {
 
 .item {
   padding: 9px 0;
+}
+
+.logo {
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo-one {
+  padding: 6px 0;
+  font-weight: bold;
+}
+
+.logo-two {
+  font-size: small;
+  color: #999;
 }
 </style>
