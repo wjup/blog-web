@@ -28,6 +28,10 @@ export default new Router({
           path: '/home',
           name: 'About',
           component: () => import('@/components/type/Home')
+        },{
+          path: '/detail',
+          name: 'Article',
+          component: () => import('@/components/Article')
         }
       ]
     }

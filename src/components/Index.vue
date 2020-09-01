@@ -1,17 +1,17 @@
 <template>
   <div class="content">
-    <Title class="f-bottom"></Title>
+    <!--<Title class="f-bottom"></Title>-->
     <el-row :gutter="10">
-      <el-col :xs="24" :sm="8" :md="6" :lg="4">
+      <el-col :xs="24" :sm="6" :md="6" :lg="4">
         <LeftSide></LeftSide>
       </el-col>
-      <el-col :xs="24" :sm="8" :md="10" :lg="14">
+      <el-col :xs="24" :sm="11" :md="11" :lg="15">
         <el-card class="box-card">
           <br />
           <router-view></router-view>
         </el-card>
       </el-col>
-      <el-col :xs="24" :sm="8" :md="8" :lg="6">
+      <el-col :xs="24" :sm="7" :md="7" :lg="5">
         <RightSide></RightSide>
       </el-col>
     </el-row>
@@ -21,10 +21,11 @@
 import Title from "@/components/common/Title";
 import LeftSide from "@/components/common/LeftSide";
 import RightSide from "@/components/common/RightSide";
+import Article from "@/components/Article";
 
 export default {
   name: "Index",
-  components: { Title, LeftSide, RightSide },
+  components: { Title, LeftSide, RightSide,Article },
 };
 </script>
 
@@ -35,9 +36,5 @@ export default {
 
 .f-bottom {
   padding-bottom: 18px;
-}
-
-a {
-  text-decoration: none;
 }
 </style>
