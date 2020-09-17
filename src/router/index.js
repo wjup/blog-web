@@ -5,7 +5,7 @@ import Index from '@/components/Index'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   routes: [
     {
       path: '/',
@@ -25,8 +25,8 @@ export default new Router({
           name: 'About',
           component: () => import('@/components/type/About')
         },{
-          path: '/home',
-          name: 'About',
+          path: '',
+          name: 'Home',
           component: () => import('@/components/type/Home')
         },{
           path: '/detail',

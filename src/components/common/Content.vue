@@ -10,7 +10,7 @@
 
     <div v-for="article in articleList" :key="article.id" style="padding-bottom: 20px">
       <div class="content-line">
-        <span class="type-tag" v-for="type in article.type">
+        <span class="type-tag" v-for="type in article.type" :key="type">
           <span>{{type}}</span>
         </span>
         <span class="create-time">{{article.time}}</span>

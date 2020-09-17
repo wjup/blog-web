@@ -25,7 +25,7 @@ import Article from "@/components/Article";
 
 export default {
   name: "Index",
-  components: { Title, LeftSide, RightSide,Article },
+  components: { Title, LeftSide, RightSide, Article },
 };
 </script>
 

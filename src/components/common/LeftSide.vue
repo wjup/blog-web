@@ -2,7 +2,7 @@
   <div>
     <el-card class="box-card" style="background-color: black;">
       <div class="top-name-one">
-        <router-link :to="{path:'/home'}" style="color: white">WJUP</router-link>
+        <router-link :to="{path:'/'}" style="color: white">WJUP</router-link>
       </div>
       <div class="top-name-two">乘风破浪，来日可期</div>
     </el-card>
@@ -18,14 +18,6 @@
       <el-avatar :size="86" src="http://blog.wjup.top/images/avatar.jpg"></el-avatar>
       <div class="logo-one">wjup</div>
       <div class="logo-two">乘风破浪，来日可期</div>
-
-      <div class="count">
-        <span>12</span>
-        <el-divider direction="vertical"></el-divider>
-        <span>23</span>
-        <el-divider direction="vertical"></el-divider>
-        <span>6</span>
-      </div>
     </el-card>
   </div>
 </template>
@@ -37,7 +29,7 @@
         memList: [
           {
             name: "首页",
-            indexPath: "/home",
+            indexPath: "/",
             index: "1",
             icon: "el-icon-tickets",
           },

@@ -16,15 +16,10 @@
     <!--最近文章-->
     <div class="right-top">RECENT POSTS</div>
     <el-card class="box-card" style="text-align:left;font-size:smaller;">
-      <span>国内独立开发者实践要点</span>
-      <el-divider></el-divider>
-      <span>ANT DESIGN和COMPOSITIONEVENT</span>
-      <el-divider></el-divider>
-      <span>LARAVEL(REST API)+REACT入门范例</span>
-      <el-divider></el-divider>
-      <span>主流REACT NATIVE组件库比较</span>
-      <el-divider></el-divider>
-      <span>中国艺术品的SVG</span>
+      <div v-for="top in topArticle" :key="top.id">
+        <span>{{top.name}}</span>
+        <el-divider></el-divider>
+      </div>
     </el-card>
     <br/>
     <!--归档-->
@@ -37,7 +32,7 @@
           <el-row :gutter="2">
             <el-col :xs="4" :sm="6" :md="6" :lg="6" v-for="mon in year.data" :key="mon.month">
               <div class="archive-item">
-                <a href="https://learner.blog.csdn.net/article/month/2020/02">
+                <a href="#">
                   <span class="time">{{mon.month}}月</span>
                   <span class="count">{{mon.count}}篇</span>
                 </a>
@@ -56,6 +51,7 @@
     data() {
       return {
         searchValue: "",
+        topArticle: [],
         countList: [
           {
             year: '2020',
@@ -84,7 +80,22 @@
           },
         ]
       }
+    },
+    mounted: function () {
+      this.loadTopArticle()
+    },
+    methods: {
+      loadTopArticle() {
+        var _this = this;
+        this.$axios.get('/topArticle').then(resp => {
+          if (resp && resp.status === 200) {
+            console.log(resp.data);
+            _this.topArticle = resp.data.data
+          }
+        })
+      }
     }
+
   }
 </script>
 
